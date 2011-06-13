@@ -2,11 +2,17 @@
 
 This is a clicks counter using PHP, jQuery and MySQL.
 
-## READY IN 3 STEPS
+## GET READY IN 3 STEPS
 
 ### Database
 
-Create database (dump.sql)
+Create database (dump.sql):
+
+	CREATE TABLE `stats` (
+	  `link` varchar(255) NOT NULL,
+	  `text` varchar(255) NOT NULL,
+	  `clicks` int(11) NOT NULL
+	);
 
 ### Edit functions.php
 
