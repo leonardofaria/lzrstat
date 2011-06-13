@@ -17,6 +17,18 @@ Create database (dump.sql):
 ### Edit functions.php
 
 Edit functions.php and set your database configs.
+	
+	<?php
+
+	$host = "localhost";
+	$user = "root";
+	$pass = "password";
+	$database = "lzrstat";
+
+	$connection = mysql_connect($host, $user, $pass);
+	$db = mysql_select_db($database);
+
+	?>
 
 ### Paste in your page
 
