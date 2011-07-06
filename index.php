@@ -27,7 +27,7 @@ echo $output;
 	echo "<table>\n\t<tr>\n\t\t<th>Clicks</th>\n\t\t<th>Page</th>\n\t</tr>\n";
 	for($i = 0; $i < $total; $i++) {
 		$row = explode(",", $rows[$i]);
-		echo "\t<tr>\n\t\t<td>$row[2]</td>\n\t\t<td><a href=\"$row[1]\">$row[0]</a></td>\n\t</tr>\n";
+		echo "\t<tr>\n\t\t<td>$row[0]</td>\n\t\t<td><a href=\"$row[2]\">$row[1]</a></td>\n\t</tr>\n";
 	}
 	echo "</table>";
 } else if ($_GET['stats'] == "csv") {

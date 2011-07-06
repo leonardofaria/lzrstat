@@ -28,7 +28,7 @@ function show_data($limit = null) {
 	
 	$output = "";
 	while ($row = mysql_fetch_array($result)){
-		$output .= $row['link'] . "," . $row['text'] . "," . $row['clicks'] . "\n";
+		$output .= $row['clicks'] . "," . $row['link'] . "," . $row['text'] . "\n";
 	}
 	
 	return $output;
